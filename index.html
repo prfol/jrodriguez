@@ -49,7 +49,7 @@
                     <i class="fa fa-map-marker"></i>&nbsp;Venezuela<br>
                     <i class="fa fa-briefcase"></i>&nbsp;Consultor de Sistemas<br>
                     <!-- <i class='fa fa-briefcase'></i>&nbsp;<br /> -->
-                    <a target="_blank" class="btn-o" href="https://forms.gle/XKnpUxizTwN5Gkf39"><i class="fa fa-envelope"></i> Email</a>						
+                    <a class="btn-o"  data-bs-target="#modalContacto" data-bs-toggle="modal" href="#"><i class="fa fa-envelope"></i> Email</a>						
                 </div>
             </div>
             <div class="accordion" id="accordion">
@@ -86,12 +86,12 @@
                         <!--  accordion-body -->
                         <div class="accordion-body">
                             <ul class="list-group list-group-light border-0 mx-0 mb-3">
-                                <a href="https://forms.gle/XKnpUxizTwN5Gkf39" target="_blank" class="list-group-item d-flex align-items-center px-0">
+                                <a data-bs-target="#modalContacto" data-bs-toggle="modal" href="#" class="list-group-item d-flex align-items-center px-0">
                                     <div class="d-flex flex-grow-1 align-items-center">
                                         <img src="Jose_Rodriguez_files/eml-icon.jpg" alt="Email" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 10px;">
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1"><strong>Email</strong></h6>
-                                            <p class="text-muted mb-0">XKnpUxizTwN5Gkf39</p>
+                                            <p class="text-muted mb-0">&nbsp;</p>
                                         </div>
                                     </div>
                                 </a>
@@ -341,7 +341,7 @@
                         </div>
                         <div class="row">
                             <div class="col p-2 d-flex justify-content-center">
-                                <img src="Jose_Rodriguez_files/codqr.jpg" class="img-fluid" alt="Código QR">
+                                <img src="Jose_Rodriguez_files/qr-code.png" class="img-fluid" alt="Código QR">
                             </div>
                             <div class="col p-2 d-flex justify-content-center">
                                 <img src="Jose_Rodriguez_files/jrrm-1.png" class="img-fluid" alt="José Rodríguez">
@@ -447,6 +447,8 @@
             </div>
         </div>
         <!-- /Modal -->
+		
+        <!-- Modal -->
         <div class="modal fade" id="modalInstalar" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -473,8 +475,26 @@
             </div>
         </div>
         <!-- /Modal -->
+
         <!-- Modal -->
+        <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;">
+                        <h5 class="modal-title" id="ModalLabel">Contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+						<iframe src="https://script.google.com/macros/s/AKfycbwbVG8mg3HHzOcbPO2N569KdEC4vNs9-vPMMSnycIdw099MrU3oC_Y-pKs_5VKqZAriSQ/exec" height="700" width="100%"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /Modal -->
+		
         <!--
             <script>
               if ('serviceWorker' in navigator) {
